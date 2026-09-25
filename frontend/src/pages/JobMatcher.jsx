@@ -29,7 +29,7 @@ if (!token) {
 }
 
 const response = await axios.post(
-  "http://127.0.0.1:8000/api/jobs/match",
+  "https://careerpilot-ai-pcqc.onrender.com/api/jobs/match",
   {
     job_description: jobDescription,
   },

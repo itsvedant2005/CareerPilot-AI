@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://careerpilot-ai-pcqc.onrender.com";
 
 function Login() {
   const navigate = useNavigate();

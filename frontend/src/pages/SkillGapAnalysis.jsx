@@ -29,7 +29,7 @@ function SkillGapAnalysis() {
 
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/skills/latest",
+        "https://careerpilot-ai-pcqc.onrender.com/api/skills/latest",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -72,7 +72,7 @@ function SkillGapAnalysis() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/skills/analyze",
+        "https://careerpilot-ai-pcqc.onrender.com/api/skills/analyze",
         {},
         {
           headers: {

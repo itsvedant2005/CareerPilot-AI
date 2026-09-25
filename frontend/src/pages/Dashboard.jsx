@@ -86,12 +86,12 @@ function Dashboard() {
       try {
         const [studentResult, resumeResult, jobsResult, codingResult, aptitudeResult, interviewResult] =
           await Promise.allSettled([
-            axios.get("http://127.0.0.1:8000/api/auth/me", authConfig),
-            axios.get("http://127.0.0.1:8000/api/resume/latest", authConfig),
-            axios.get("http://127.0.0.1:8000/api/jobs/history", authConfig),
-            axios.get("http://127.0.0.1:8000/api/coding/history", authConfig),
-            axios.get("http://127.0.0.1:8000/api/aptitude/history", authConfig),
-            axios.get("http://127.0.0.1:8000/api/interview/history", authConfig),
+            axios.get("https://careerpilot-ai-pcqc.onrender.com/api/auth/me", authConfig),
+            axios.get("https://careerpilot-ai-pcqc.onrender.com/api/resume/latest", authConfig),
+            axios.get("https://careerpilot-ai-pcqc.onrender.com/api/jobs/history", authConfig),
+            axios.get("https://careerpilot-ai-pcqc.onrender.com/api/coding/history", authConfig),
+            axios.get("https://careerpilot-ai-pcqc.onrender.com/api/aptitude/history", authConfig),
+            axios.get("https://careerpilot-ai-pcqc.onrender.com/api/interview/history", authConfig),
           ]);
 
         const studentResponse =

@@ -74,7 +74,7 @@ if (!token) {
 }
 
 const response = await axios.post(
-  "http://127.0.0.1:8000/api/resume/analyze",
+  "https://careerpilot-ai-pcqc.onrender.com/api/resume/analyze",
   formData,
   {
     headers: {

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://careerpilot-ai-pcqc.onrender.com";
 
 function MockInterview() {
   const navigate = useNavigate();

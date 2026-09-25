@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const JMH_API = "http://127.0.0.1:8000";
+const JMH_API = "https://careerpilot-ai-pcqc.onrender.com";
 
 function JobMatchHistory() {
   const navigate = useNavigate();

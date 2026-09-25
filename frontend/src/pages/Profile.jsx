@@ -32,7 +32,7 @@ function Profile() {
 
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auth/me",
+          "https://careerpilot-ai-pcqc.onrender.com/api/auth/me",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -97,7 +97,7 @@ function Profile() {
 
     try {
       await axios.put(
-        "http://127.0.0.1:8000/api/auth/me",
+        "https://careerpilot-ai-pcqc.onrender.com/api/auth/me",
         {
           name: name.trim(),
           college: college.trim(),
