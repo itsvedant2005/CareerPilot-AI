@@ -86,13 +86,23 @@ const response = await axios.post(
 
       setResult(response.data.analysis);
     } catch (err) {
-      console.error(err);
+  console.error("RESUME ANALYSIS ERROR:", err);
+  console.error("MESSAGE:", err.message);
+  console.error("RESPONSE:", err.response);
+  console.error("STATUS:", err.response?.status);
+  console.error("DATA:", err.response?.data);
 
-      setError(
-        err.response?.data?.detail ||
-          "Resume analysis failed. Please try again."
-      );
-    } finally {
+  if (err.response) {
+    setError(
+      err.response.data?.detail ||
+        `Resume analysis failed (${err.response.status}).`
+    );
+  } else {
+    setError(
+      `Resume analysis request failed: ${err.message || "Network error"}`
+    );
+  }
+} {
       setLoading(false);
     }
   };
